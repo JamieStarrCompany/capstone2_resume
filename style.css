@@ -1,0 +1,101 @@
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    background-color: #799ec0bd;
+    
+}
+
+#title {
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.sub-heading {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+#list-style {
+    list-style: none;
+    display: flex;  
+    justify-content: space-around;  
+    align-items: center;
+    margin-left: -50px;
+    
+}
+
+#list-style li {
+    padding: 10px;
+    
+}
+
+.resume > .list-group > li{
+    list-style: none;
+}
+
+.contact {
+    background-color:rgba(217, 172, 251, 0.452);
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* Media Queries */
+
+/* Small screens */
+@media only screen and (max-width: 576px) {
+    #list-style {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    
+    #list-style li {
+        padding: 5px;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    #list-style {
+        justify-content: space-between;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 993px) {
+    /* Increase container width */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto; /* Center the container */
+    }
+    
+    /* Divide content into multiple columns */
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    
+    /* Add more padding */
+    .section {
+        padding: 30px;
+    }
+    
+    /* Larger font size for headings */
+    h1, h2, h3 {
+        font-size: 2.5rem;
+    }
+   
+}
+
+
